@@ -1,0 +1,14 @@
+libaam-jack changelog
+
+Version 1.2:
+ - Fix compile on newer GCC versions
+
+Version 1.1:
+ - Added 'xt-trans2midi' tool, to [fake] sync to Jack Transport
+ - Better number of maximum ports (4 MIDI and 32 Audio)
+ - Do not unregister jack client on shutdown callback
+ - Fix issues with midi 'port'
+ - Small code fixes
+
+Version 1.0:
+ - Initial release

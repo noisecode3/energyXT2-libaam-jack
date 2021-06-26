@@ -1,0 +1,42 @@
+libaam-jack - JACK Audio & MIDI support for energyXT2
+
+INFORMATION:
+--------------------
+This is a small library that allows to use JACK Audio & MIDI (Playback and Record) inside energyXT2.
+The number of Audio and MIDI channels can be configured using the xt2-config utility.
+
+Initial JACK transport support is available, via 'xt2-trans2midi' utility.
+It checks JACK events, and outputs as MIDI CCs in a JACK MIDI port.
+Events are:
+CC1 - PLAY
+CC2 - STOP
+CC4 - REW
+CC5 - BPM
+Set those^ in energyXT, start xt2-trans2midi and connect it to any energyXT MIDI input.
+
+The JACK ports are created as soon as energyXT2 starts and not when a project is loaded (as old libaam.so implementations did).
+This allows to more properly integrate energyXT2 into a JACK modular setup, cause all the connections stay open as long as energyXT2 runs.
+If you disable an Audio or MIDI port in the energyXT2 settings, the port will not disappear, it will just not be processed.
+
+energyXT2 does not have the option to configure the Audio, so you may want to start xt2-config before starting the main app.
+When you change the number of ports, make sure you enable them in energyXT2 Audio or MIDI setup window.
+
+
+COMPILE:
+--------------------
+libaam-jack requires JACK; if you have JACK2, I recommend to edit libaam.cpp and set '#define HAVE_JACK2 true'.
+It also requires Qt for handle settings and the 'xt2-config' utility.
+If you're running a 64bit system, you'll need 32bit binaries of JACK and Qt (energyXT2 is a 32bit only app).
+(Note: the xt2-config and xt2-trans2midi utilities do not need to be 32bit)
+
+
+INSTALL:
+--------------------
+Just copy the libaam.so file into your energyXT2 folder (replacing the old one).
+You can also copy the utilities somewhere you can easily start it ('/usr/local/bin/' is fine).
+
+
+LICENSE:
+--------------------
+libaam-jack is developed by falkTX and released in the terms of the GNU LGPL 3 license.
+(see COPYING for details)
