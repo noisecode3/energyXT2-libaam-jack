@@ -1,6 +1,6 @@
 // energyXT - JACK audio interface
-// author: jorgen aase, ralf beck and falkTX
-// compile: g++ -shared -m32 -Wall -ljack -lQtCore -I/usr/include/qt4 libaam.cpp -o /_path_to_energyXT2_/libaam.so
+// author: Jorgen Aase, Ralf Beck, falkTX and Martin Bångens
+// compile: g++ -shared -m32 -Wall -ljack -lQt5Core -I/usr/include/qt libaam.cpp -o /_path_to_energyXT2_/libaam.so
 
 #include "libaam.h"
 

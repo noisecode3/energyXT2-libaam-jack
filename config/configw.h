@@ -1,18 +1,18 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#include <QtGui/QDialog>
+#include <QDialog>
 
-namespace Ui {
-    class Config;
-}
+QT_BEGIN_NAMESPACE
+namespace Ui { class Config; }
+QT_END_NAMESPACE
 
 class Config : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Config(QWidget *parent = 0);
+    Config(QWidget *parent = nullptr);
     ~Config();
 
 private:
@@ -23,5 +23,4 @@ private slots:
     void saveSettings();
 
 };
-
 #endif // CONFIG_H

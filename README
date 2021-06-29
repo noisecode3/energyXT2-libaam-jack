@@ -1,4 +1,10 @@
-libaam-jack - JACK Audio & MIDI support for energyXT2
+libaam-jack - JACK Audio & MIDI support for energyXT2 (2.7 32-bit)
+
+This is a qt5 vertion of xt2-config that targets AV linux or debian bullseye.
+At the moment it wont compile and it will need jack and qt5 multilib to link to.
+Alsa audio and midi works on arch and will probably be added in as an option.
+
+No testing has been done yet, but will be done in a virtual machine.
 
 INFORMATION:
 --------------------

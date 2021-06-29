@@ -1,13 +1,13 @@
-#include <QtGui/QApplication>
 #include "configw.h"
+
+#include <QApplication>
 
 int main(int argc, char *argv[])
 {
-    QApplication app(argc, argv);
-    app.setApplicationName("energyXT2");
-    app.setOrganizationName("XT Software AS");
+    QApplication a(argc, argv);
+    a.setApplicationName("energyXT2");
+    a.setOrganizationName("XT Software AS");
     Config w;
     w.show();
-
-    return app.exec();
+    return a.exec();
 }

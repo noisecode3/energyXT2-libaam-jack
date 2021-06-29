@@ -1,11 +1,11 @@
 #include "configw.h"
 #include "ui_config.h"
 
-#include <QtCore/QSettings>
+#include <QSettings>
 
-Config::Config(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::Config)
+Config::Config(QWidget *parent)
+    : QDialog(parent)
+    , ui(new Ui::Config)
 {
     ui->setupUi(this);
 

@@ -4,8 +4,11 @@
 #include <jack/jack.h>
 #include <jack/midiport.h>
 
-#include <QtCore/QList>
-#include <QtCore/QSettings>
+//#include <QtCore/QList>
+//#include <QtCore/QSettings>
+
+#include <QList>
+#include <QSettings>
 
 #define MAX_AUDIO_INS  32
 #define MAX_AUDIO_OUTS 32
