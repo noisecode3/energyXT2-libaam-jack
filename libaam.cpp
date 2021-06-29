@@ -7,7 +7,7 @@
 #include <cstdio>
 #include <iostream>
 
-#define HAVE_JACK2 false
+#define HAVE_JACK2 true
 
 bool debug = false;
 CProcess* xt_process = 0;
