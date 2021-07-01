@@ -261,7 +261,7 @@ void stream_init()
 
                         int port_flags = jack_port_flags(port);
 
-                        if (!port_flags & JackPortIsPhysical)
+                        if ((!port_flags) & JackPortIsPhysical)
                             continue;
 
 #if HAVE_JACK2

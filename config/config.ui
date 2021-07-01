@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>432</width>
-    <height>291</height>
+    <width>476</width>
+    <height>298</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -70,7 +70,7 @@
       <item row="1" column="2">
        <widget class="QCheckBox" name="ch_aout">
         <property name="text">
-         <string>Auto-connect to Hardware Outpus</string>
+         <string>Auto-connect to Hardware Outputs</string>
         </property>
        </widget>
       </item>
@@ -127,7 +127,7 @@
       <item row="1" column="2">
        <widget class="QCheckBox" name="ch_mout">
         <property name="text">
-         <string>Auto-connect to Hardware Outpus</string>
+         <string>Auto-connect to Hardware Outputs</string>
         </property>
        </widget>
       </item>
